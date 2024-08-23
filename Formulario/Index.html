@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro social</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+
+<div class="container__index">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="features">
+
+          <div class="container__gifs"> 
+            <!-- <img src="https://i.ibb.co/yqJRMd2/Group-306.png"> -->
+             <img src="https://i.ibb.co/M8SDXj9/LOGO-NOVA-SEM-FUNDO-M1-3.png">
+             <div id="gifPredio">
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/193c622b-3ed6-4c2a-b247-e6c7ed983bf9/TvUF6nEJAH.json" background="transparent" speed="1" style="width: 800px; height: 800px" direction="1" playMode="normal" autoplay></dotlottie-player>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="registration-form">
+
+        <section id="aluguelSocial">
+          <h2>Cadastro de Aluguel Social</h2>
+          <h4>Departamente de Habitação</h4>
+
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="text">Nome</label>
+              <input type="text" name="Nome" class="form-control" placeholder="Seu nome" id="nome" required>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-label">CPF</label>
+                <input type="number" name="CPF" class="form-control" id="cpf" placeholder="000.000.000-00">
+              </div>
+              <div class="col">
+                <label class="form-label">RG</label>
+                <input type="number" name="RG" id="rg" class="form-control" placeholder="00.000.000-0">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-label" for="validationDefault04" class="form-label">Estado Civil</label>
+                <select class="form-select" id="estadoCivil" required>
+                  <option id="selectSolteiro">Solteiro</option>
+                  <option id="selectCasado">Casado</option>
+                  <option id="selectDivorciado">Divorciado</option>
+                  <option id="selectUniaoEstavel">União Estável</option>
+                </select>
+              </div>
+              <div class="col">
+                  <label class="form-label" for="validationDefault04" class="form-label">Sexo</label>
+                <select class="form-select" id="sexo" required>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-label">Titulo Eleitoral</label>
+                <input type="number" name="tituloEleitoral" class="form-control" placeholder="0000000000/00" id="tituloEleitoral">
+              </div>
+              <div class="col">
+                <label class="form-label">Data de emissão do Titulo</label>
+                <input type="date" name="dataTitulo" class="form-control" placeholder="" id="dataEmissaoTitulo">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-label">Município de emissão</label>
+                <input type="text" name="muniEmissão" class="form-control" placeholder="MS" id="municipioEmissao">
+              </div>
+              <div class="col">
+                <label class="form-label">Tempo de residencia no município</label>
+                <input type="text" name="tempoResidencia" class="form-control" placeholder="12 meses" id="tempoResidencia">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="text">Endereço</label>
+              <input type="text" name="endereco" class="form-control" placeholder="Av. endereço" id="endereco" required>
+            </div>
+
+            <section class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" for="number">Número</label>
+                <input type="number" name="numero" class="form-control" id="numero" placeholder="00" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="text">Complemento</label>
+                <input type="text" name="complemento" placeholder="Ap. 8" class="form-control" id="complemento" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="text">Bairro</label>
+              <div class="input-group">
+                  <input type="text" name="bairro" placeholder="Centro" class="form-control" id="bairro" required>
+                </div>
+              </div>
+            </section>
+
+            <section class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" for="text">UF</label>
+                <input type="text" class="form-control" id="UF" placeholder="Mato Grosso do Sul" id="uf" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="Municipio" class="form-label">Municipio</label>
+                <select class="form-select" id="municipio" required>
+                    <option value="Água Clara">Água Clara</option>
+                    <option value="Alcinópolis">Alcinópolis</option>
+                    <option value="Amambai">Amambai</option>
+                    <option value="Anastácio">Anastácio</option>
+                    <option value="Anaurilândia">Anaurilândia</option>
+                    <option value="Angélica">Angélica</option>
+                    <option value="Antônio João">Antônio João</option>
+                    <option value="Aparecida do Taboado">Aparecida do Taboado</option>
+                    <option value="Aquidauana">Aquidauana</option>
+                    <option value="Aral Moreira">Aral Moreira</option>
+                    <option value="Bandeirantes">Bandeirantes</option>
+                    <option value="Bataguassu">Bataguassu</option>
+                    <option value="Batayporã">Batayporã</option>
+                    <option value="Bela Vista">Bela Vista</option>
+                    <option value="Bodoquena">Bodoquena</option>
+                    <option value="Bonito">Bonito</option>
+                    <option value="Brasilândia">Brasilândia</option>
+                    <option value="Caarapó">Caarapó</option>
+                    <option value="Camapuã">Camapuã</option>
+                    <option value="Campo Grande">Campo Grande</option>
+                    <option value="Caracol">Caracol</option>
+                    <option value="Cassilândia">Cassilândia</option>
+                    <option value="Chapadão do Sul">Chapadão do Sul</option>
+                    <option value="Corguinho">Corguinho</option>
+                    <option value="Coronel Sapucaia">Coronel Sapucaia</option>
+                    <option value="Corumbá">Corumbá</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Coxim">Coxim</option>
+                    <option value="Deodápolis">Deodápolis</option>
+                    <option value="Dois Irmãos do Buriti">Dois Irmãos do Buriti</option>
+                    <option value="Douradina">Douradina</option>
+                    <option value="Dourados">Dourados</option>
+                    <option value="Eldorado">Eldorado</option>
+                    <option value="Fátima do Sul">Fátima do Sul</option>
+                    <option value="Figueirão">Figueirão</option>
+                    <option value="Glória de Dourados">Glória de Dourados</option>
+                    <option value="Guia Lopes da Laguna">Guia Lopes da Laguna</option>
+                    <option value="Iguatemi">Iguatemi</option>
+                    <option value="Inocência">Inocência</option>
+                    <option value="Itaporã">Itaporã</option>
+                    <option value="Itaquirai">Itaquirai</option>
+                    <option value="Ivinhema">Ivinhema</option>
+                    <option value="Japorã">Japorã</option>
+                    <option value="Jaraguari">Jaraguari</option>
+                    <option value="Jardim">Jardim</option>
+                    <option value="Jateí">Jateí</option>
+                    <option value="Juti">Juti</option>
+                    <option value="Ladário">Ladário</option>
+                    <option value="Laguna Carapã">Laguna Carapã</option>
+                    <option value="Maracaju">Maracaju</option>
+                    <option value="Miranda">Miranda</option>
+                    <option value="Mundo Novo">Mundo Novo</option>
+                    <option value="Naviraí">Naviraí</option>
+                    <option value="Nioaque">Nioaque</option>
+                    <option value="Nova Alvorada do Sul">Nova Alvorada do Sul</option>
+                    <option value="Nova Andradina">Nova Andradina</option>
+                    <option value="Novo Horizonte do Sul">Novo Horizonte do Sul</option>
+                    <option value="Paranaíba">Paranaíba</option>
+                    <option value="Paranhos">Paranhos</option>
+                    <option value="Pedro Gomes">Pedro Gomes</option>
+                    <option value="Ponta Porã">Ponta Porã</option>
+                    <option value="Porto Murtinho">Porto Murtinho</option>
+                    <option value="Ribas do Rio Pardo">Ribas do Rio Pardo</option>
+                    <option value="Rio Brilhante">Rio Brilhante</option>
+                    <option value="Rio Negro">Rio Negro</option>
+                    <option value="Rio Verde de Mato Grosso">Rio Verde de Mato Grosso</option>
+                    <option value="Rochedo">Rochedo</option>
+                    <option value="Santa Rita do Pardo">Santa Rita do Pardo</option>
+                    <option value="São Gabriel do Oeste">São Gabriel do Oeste</option>
+                    <option value="Selvíria">Selvíria</option>
+                    <option value="Sete Quedas">Sete Quedas</option>
+                    <option value="Sidrolândia">Sidrolândia</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Tacuru">Tacuru</option>
+                    <option value="Taquarussu">Taquarussu</option>
+                    <option value="Terenos">Terenos</option>
+                    <option value="Três Lagoas">Três Lagoas</option>
+                    <option value="Vicentina">Vicentina</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="Celular">Celular</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="celular" placeholder="(00) 000000000" required>
+                </div>
+              </div>
+            </section>
+
+            <section class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" for="ContatoRecado">Contato para recado</label>
+                <input type="number" class="form-control" id="contatoRecado" placeholder="(00) 000000000" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="validationDefault04" class="form-label">Possui Cad Único?</label>
+                <select class="form-select" id="cadUnico" required>
+                  <option>Sim</option>
+                  <option>Não</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="validationDefault04" class="form-label">Portador de deficiência?</label>
+                <select class="form-select" id="deficiencia" required>
+                  <option>Sim</option>
+                  <option>Não</option>
+                </select>
+              </div>
+            </section>
+
+          
+
+            <div class="row">
+              <div class="col">
+                <label class="form-label">Profissão</label>
+                <input type="text" name="profissao" id="profissao" class="form-control" placeholder="">
+              </div>
+              <div class="col">
+                <label class="form-label" for="rendaMensal" class="form-label">Renda mensal familiar</label>
+                <select class="form-select" id="rendaFamiliar" required>
+                  <option>Menos de 1 salário mínimo</option>
+                  <option>De 1 a 3 salários mínimos</option>
+                  <option>Mais de 3 salários mínimos</option>
+                </select>
+              </div>
+            </div>
+            
+            <div id="membroConjuge" style="display: none">
+              <div class="row g-3">
+                <div class="col">
+                  <label class="form-label">Nome do cônjuge</label>
+                  <input type="text" name="nomeConjuge" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                  <label class="form-label">CPF do cônjuge</label>
+                  <input type="number" name="cpfConjuge" class="form-control" placeholder="000.000.000-00">
+                </div>
+              </div>
+            
+            <section class="row g-3">
+              <div class="col-md-4">
+                <label class="form-label" for="celularConjuge">Celular do cônjuge</label>
+                <input type="number" name="celularConjuge" placeholder="(00) 000000000" class="form-control" id="celularConjuge" value="" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="profissaoConjuge">Profissão do cônjuge</label>
+                <input type="text" name="profissaoConjuge" class="form-control" id="profissaoConjuge" value="" required>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="validationDefault04" class="form-label">Renda Mensal do cônjuge</label>
+                <select class="form-select" id="validationDefault04" required>
+                  <option>Menos de 1 salário mínimo</option>
+                  <option>De 1 a 3 salários mínimos</option>
+                  <option>Mais de 3 salários mínimos</option>
+                </select>
+              </div>
+            </section>
+            </div>
+            
+            <div class="container__botao__proximo">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="updatesComposicaoFamiliar">
+                <label class="form-check-label" for="updatesComposicaoFamiliar">Confirmo que todos os dados fornecidos estão corretos e completos.</label>
+              </div>
+              <button type="button" class="btn btn-primary btn-block" id="btnProximo" disabled>Proximo</button>
+            </div>
+
+            </section>
+
+            
+
+            </section>
+
+            <section id="composicaoFamiliar" style="display: none;">
+
+              <h3>Composição Familiar</h3>
+          
+              <div class="form-group">
+                <label class="form-label" for="familiaresSelect" class="form-label">Há quantos familiares que residem com o titular</label>
+                <select class="form-select" id="familiaresSelect" required>
+                  <option selected disabled value="">Quantidade de familiares</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+          
+              <div id="familiaresContainer">
+                <!-- Campos dinâmicos para os familiares aparecerão aqui -->
+              </div>
+              <div>
+
+
+              <div class="row" id="membroDeficiente" style="display: none;">
+                <div class="col">
+                  <label class="form-label" for="rendaMensal" class="form-label">Algum membro da composição familiar é pessoa com deficiência?</label>
+                  <select class="form-select" id="rendaFamiliar" required>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label class="form-label" for="rendaMensal" class="form-label">Mora em área de risco?</label>
+                  <select class="form-select" id="rendaFamiliar" required>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                  <label class="aviso__edit">OBS.: A comprovação será realizada através de laudo da defesa civil</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label class="form-label" for="rendaMensal" class="form-label">Possui cadastro no Departamento de Habitação para programa habitacional de caráter definitivo?</label>
+                  <select class="form-select" id="rendaFamiliar" required>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label class="form-label" for="rendaMensal" class="form-label">Já recebeu unidade habitacional por outros programas nacionais, estaduais ou municipais?</label>
+                  <select class="form-select" id="rendaFamiliar" required>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label class="form-label" for="rendaMensal" class="form-label">É mulher e vitima de violência acompanhada por serviço especializado?</label>
+                  <select class="form-select" id="rendaFamiliar" required>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label class="form-label" for="rendaMensal" class="form-label">É agresso de Acolhimento Institucional tendo completado 18 anos?</label>
+                  <select class="form-select" id="rendaFamiliar" required>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label class="form-label" for="rendaMensal" class="form-label">É familia em estado de vulnerabilidade social residente em imóvel que está em processo de reintegração de posse promovida pelo município</label>
+                  <select class="form-select" id="rendaFamiliar" required>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                </div>
+              </div>
+
+              </div>
+        
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="updates">
+                <label class="form-check-label" for="updates">Confirmo que todos os dados fornecidos estão corretos e completos.</label>
+              </div>
+        
+              <div class="container__botoes">
+                <button type="button" class="btn btn-primary btn-block btn__compfamiliar" id="btnVoltar">Voltar</button>
+                <button type="submit" class="btn btn-primary btn-block btn__compfamiliar" id="btnEnviar" disabled>
+                  Enviar
+                </button>
+              </div>
+          </form>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+  </div>
+</div>
+
+<footer class="container__footer"><img src="https://i.ibb.co/WFKMpKd/Group-41.png" alt="" style="width: 16em;"></footer>
+<p class="segred">hbdrg</p>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="JS/trocaFormularios.js"></script>
+<script src="JS/mostrarConjuge.js"></script>
+<script src="JS/liberacaoBotoes.js"></script>
+<script src="JS/multiplicarFamiliares.js"></script>
+</body>
+</html>
